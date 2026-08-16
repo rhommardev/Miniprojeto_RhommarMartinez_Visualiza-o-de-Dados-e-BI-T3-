@@ -78,9 +78,36 @@ percevendo que o arquivo contem 830000 linhas e 1 coluna com uma lista que conte
 ![tabela de dados original](captures/capture_original.png)
 
 2# Verificar e reportar ao menos dois problemas básicos: valores nulos por coluna, duplicatas e possíveis inconsistências (ex.: datas inválidas ou categorias vazias).
+3# Fazer as três etapas de limpeza mínima necessária: remover ou imputar nulos (explique a escolha), eliminar duplicatas relevantes e ajustar tipos de dados (ex.: converter coluna DATA para datetime).
 
 Foi creado um script para esta analise exploratoria de dados deste arquivo onde se tomaram apenas 100 linhas de registro. Para fazer para fines academicos e de aprendizado, pois o arquivo original contem mais de 1.000 linhas.
 Codigo de carregamento de de dados do arquivo:
 ![script_df_enxuto](captures\image.png)
 
-Foram observado que 
+Foi corrigido o Dtype da DATA para datetime.
+![alt text](captures\imageTO_datetime.png)
+
+Foi não foi observado dados nulos . mas foram identificados valores duplicados , então foi aplicado o metodo aplicado o seguinte script 
+
+![alt text](capturecaptures\keep=False.png)
+Neste caso se pode observar que os dados duplicados reference a datas clientes e categorias de produtos
+entendendo que são varias compras realizadas pelos clientes. 
+
+Se decidiou aplicar o metodo nunique() 
+![alt text](captures\nunique.png)
+
+aplicando o metodo nunique() para verificar a quantidade de valores unicos em cada coluna do dataframe. Se obseva segundo os dados das colunas que a coluna CO_ID e CL_ID apresentam 3 valores o que dignifica que existem 3 compras diferentes e 3 clientes diferentes, enquanto as outras colunas apresentam apenas 1 valor unico, o que indica que todos os registros possuem o mesmo valor para essas colunas.
+
+Para resolver o problema das duplicatas foi criada outro df chamado df_clientes pegando as colunas (CO_ID	CL_ID	CL_GENERO	CL_EC	CL_FHL	CL_SEG)  e dropando as duplicatas
+
+![alt text](captures\duplicatas_clientes.png)
+
+Tratando a coluna de CL_EC referente a estado civil onde era indentificada por numeros e foi reemplazados por descriçoes
+
+![alt text](captures\CL_EC.png)
+
+Gerar estatísticas descritivas básicas para coluna de número de filhos do cliente (média; mediana; desvio padrão; moda; máximo; mínimo; e contagem).
+
+![alt text](captures\estatistica_cl_fhl.png)
+
+-Explorar padrões de agrupamento com pelo menos dois agrupamentos (por exemplo: gênero com mais vendas, compras), usando groupby() ou pivot_table().
