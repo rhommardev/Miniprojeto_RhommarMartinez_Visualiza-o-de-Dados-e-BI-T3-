@@ -27,3 +27,6 @@ import os
 import re
 import datetime
 
+Para esta analise exploratoria de dados deste arquivo se tomaram apenas 100 linhas de registro. Para fazer para fines academicos e de aprendizado, pois o arquivo original contem mais de 1.000 linhas.
+
+![alt text](image.png)
