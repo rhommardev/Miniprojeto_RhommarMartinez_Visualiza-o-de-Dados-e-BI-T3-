@@ -68,15 +68,19 @@ import os
 import re
 import datetime
 
+Etapas:
 
-Respostas do dessafio:
+1# Carregar a base Varejo.csv com pandas e mostrar: número de registros, colunas e tipos de dados.
 
 Foi carregado o arquivo Base varejo.csv com pandas e mostrado o número de registros, colunas e tipos de dados.
 percevendo que o arquivo contem 830000 linhas e 1 coluna com uma lista que contem os nomes das colunas com os dados.
 
 ![tabela de dados original](captures/capture_original.png)
 
-foi creado um script para esta analise exploratoria de dados deste arquivo onde se tomaram apenas 100 linhas de registro. Para fazer para fines academicos e de aprendizado, pois o arquivo original contem mais de 1.000 linhas.
-Codigo de carregamento de de dados do arquivo:
-![script_df_enxuto](captures/capture_carregamento_dados.png)
+2# Verificar e reportar ao menos dois problemas básicos: valores nulos por coluna, duplicatas e possíveis inconsistências (ex.: datas inválidas ou categorias vazias).
 
+Foi creado um script para esta analise exploratoria de dados deste arquivo onde se tomaram apenas 100 linhas de registro. Para fazer para fines academicos e de aprendizado, pois o arquivo original contem mais de 1.000 linhas.
+Codigo de carregamento de de dados do arquivo:
+![script_df_enxuto](captures\image.png)
+
+Foram observado que 
