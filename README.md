@@ -111,3 +111,70 @@ Gerar estatísticas descritivas básicas para coluna de número de filhos do cli
 ![alt text](captures\estatistica_cl_fhl.png)
 
 -Explorar padrões de agrupamento com pelo menos dois agrupamentos (por exemplo: gênero com mais vendas, compras), usando groupby() ou pivot_table().
+
+
+Foi feito um agrupamento para vizualizar :
+-Quantidade de compras por genero
+-Quantidade de compras por estado civil
+-Quantidade de compras por nro de filhos
+
+![alt text](captures\groupby1.png)
+
+Aqui se apresentan a quantidade de produtos comprados por cliente 
+
+![alt text](captures\groupby2.png)
+
+
+Conclusões e problemas observados na base de dados:
+
+Os primeiros problemas observados na base de dados foi a coluna onde estavam inseridas as colunas da base de dados.
+
+Para poder fazer a analise exploratoria de dados na base de dados foi criado um dataframe escolhendo as colunas mais importantes para o analise.
+
+Problemas e Soluções:
+- Dtype na coluna DATA.
+- As duplicatas foram tratadas de forma separadas pegando os dados das colunas referentes aos clientes, podendo obsevar que exitian 3 clientes.
+-Coluna de estado civil que apresentaba dados numericos, foi tratada para mostrar descrição de estado civil. 
+
+Conclusões:
+Foi trabalhado en base a um DataFrame chamado df_enxuto usando 100 registros, en los cuales se observaram 3 clientes que realizaram compras.
+
+Analizando podemos perceber que o cliente 534 Masculino, Solteiro, Classe Econômica C realizou o maior numero de compras , seguido pelo cliente 290 Feminino Casada, sem filhos classe economica B e depois o cliente 279 Masculino, Casado, com 2 filhos Classe Econômica B realizou o menor numero de compras.
+
+Segundo as categorias que predominaram segundo quantidade de compras foi o genero masculino, os de estado civil solteiro e os clientes com 1 filho tambem fazen mais compras.
+
+Os produtos mais comprados:
+Categorias:
+ALIMENTOS     50
+HIGIENE       16
+LIMPEZA       16
+BEBIDAS       10
+PET            4
+ACESSORIOS     3
+#N/D           1
+
+
+Produtos mais comprados segundo cada cliente:
+Cliente  Produto     Qtd
+279    ALIMENTOS      7
+       LIMPEZA        4
+       HIGIENE        2
+       ACESSORIOS     1
+       PET            1
+290    ALIMENTOS     13
+       HIGIENE        7
+       LIMPEZA        5
+       PET            3
+       BEBIDAS        2
+       ACESSORIOS     2
+       #N/D           1
+534    ALIMENTOS     30
+       BEBIDAS        8
+       HIGIENE        7
+       LIMPEZA        7
+
+Cliente 
+CL_ID	CL_GENERO	CL_EC	      CL_FHL	CL_SEG
+0	534	M	Solteiro	            1        C
+52	279	M	Casado ou união estável	2	     B
+67	290	F	Casado ou união estável	0	     B
