@@ -85,11 +85,11 @@ Codigo de carregamento de de dados do arquivo:
 ![script_df_enxuto](captures\image.png)
 
 Foi corrigido o Dtype da DATA para datetime.
-![alt text](captures\imageTO_datetime.png)
+![alt text](captures\imageT0_date.png)
 
 Foi não foi observado dados nulos . mas foram identificados valores duplicados , então foi aplicado o metodo aplicado o seguinte script 
 
-![alt text](capturecaptures\keep=False.png)
+![alt text](captures\keep=False.png)
 Neste caso se pode observar que os dados duplicados reference a datas clientes e categorias de produtos
 entendendo que são varias compras realizadas pelos clientes. 
 
