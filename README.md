@@ -143,38 +143,7 @@ Analizando podemos perceber que o cliente 534 Masculino, Solteiro, Classe Econô
 
 Segundo as categorias que predominaram segundo quantidade de compras foi o genero masculino, os de estado civil solteiro e os clientes com 1 filho tambem fazen mais compras.
 
-Os produtos mais comprados:
-Categorias:
-ALIMENTOS     50
-HIGIENE       16
-LIMPEZA       16
-BEBIDAS       10
-PET            4
-ACESSORIOS     3
-#N/D           1
+![alt text](captures/produtosmaiscomprados.png)
 
 
-Produtos mais comprados segundo cada cliente:
-Cliente  Produto     Qtd
-279    ALIMENTOS      7
-       LIMPEZA        4
-       HIGIENE        2
-       ACESSORIOS     1
-       PET            1
-290    ALIMENTOS     13
-       HIGIENE        7
-       LIMPEZA        5
-       PET            3
-       BEBIDAS        2
-       ACESSORIOS     2
-       #N/D           1
-534    ALIMENTOS     30
-       BEBIDAS        8
-       HIGIENE        7
-       LIMPEZA        7
-
-Cliente 
-CL_ID	CL_GENERO	CL_EC	      CL_FHL	CL_SEG
-0	534	M	Solteiro	            1        C
-52	279	M	Casado ou união estável	2	     B
-67	290	F	Casado ou união estável	0	     B
+![alt text](captures/produtocliente.png)
